@@ -1,4 +1,4 @@
-
+from CLI_classes import AddressBook, Record
 
 CONTACTS = {} #Key( Name ): Value( Phone )
 
@@ -86,5 +86,7 @@ def main():
             continue
         INFORMATION[comand](go)  
 
+if __name__ == "__main__":
+    addressbook = AddressBook()
+    main()
 
-main()
